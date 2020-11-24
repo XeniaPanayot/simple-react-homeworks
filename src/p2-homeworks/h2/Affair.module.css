@@ -1,0 +1,16 @@
+.taskItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: darkslateblue 1px solid;
+}
+.taskItem p {
+    font-size: larger;
+}
+.deleteBtn {
+    width: 30px;
+    height: 30px;
+    color: aliceblue;
+    font-size: x-large;
+    background-color: crimson;
+}

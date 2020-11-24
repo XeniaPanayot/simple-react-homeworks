@@ -1,3 +1,20 @@
-.someClass {
-
+.affairsList {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: aliceblue;
+    padding: 15px;
 }
+.buttonsList {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.button {
+    background-color: lightsteelblue;
+    border: darkslateblue 1px solid;
+    font-size: larger;
+    color: darkslateblue;
+    padding: 10px 15px;
+}
+
