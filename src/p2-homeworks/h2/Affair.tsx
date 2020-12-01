@@ -13,7 +13,7 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div className={styles.taskItem}>
-            <p>Task item here</p>
+            <p>{props.affair.name}</p>
 
             <button className={styles.deleteBtn} onClick={deleteCallback}>X</button>
         </div>

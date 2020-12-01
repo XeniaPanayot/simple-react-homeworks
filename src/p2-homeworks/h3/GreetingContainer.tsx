@@ -5,7 +5,7 @@ import {UserType} from "./HW3";
 
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
-    addUserCallback: any // need to fix any
+    addUserCallback: (name:string) => void // need to fix any
 }
 
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
@@ -17,7 +17,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     };
     const addUser = () => {
         if (name !== "") {
-            addUserCallback();
+            addUserCallback(name);
             setName("");
             console.log(users)
             alert(`Hello  ${name}!`); // need to fix
