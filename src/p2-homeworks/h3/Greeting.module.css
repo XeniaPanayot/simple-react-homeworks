@@ -1,7 +1,36 @@
-.someClass {
-
+.containerClass {
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
 }
 
+.regularInputClass {
+    border: darkcyan 1px solid;
+    padding: 10px;
+    margin-right: 30px;
+}
 .error {
     border: 1px solid red;
+    padding: 10px;
+    margin-right: 30px;
+}
+.btnClass {
+    padding: 0 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.countClass {
+    align-self: center;
+    font-size: larger;
+    margin-left: 30px;
+}
+.errorMessageClass {
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    color: orangered;
 }
