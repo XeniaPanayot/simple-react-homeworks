@@ -35,10 +35,10 @@ function HW4() {
 
                 {/*should work (должно работать)*/}
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    red ={!!error} // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    alert {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
                 {/*should work (должно работать)*/}
@@ -46,11 +46,17 @@ function HW4() {
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
+                    text-1 depending on text-2 {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox
+                    checked={checked}
+                    onChange={testOnChange}
+                    onChangeChecked={setChecked}
+                >
+                    text-2 depending on text-1
+                </SuperCheckbox>
             </div>
 
             <hr/>

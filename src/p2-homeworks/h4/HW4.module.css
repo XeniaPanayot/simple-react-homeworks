@@ -3,7 +3,10 @@
 }
 
 .column {
+    width: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 30px;
 }

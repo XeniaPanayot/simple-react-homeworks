@@ -1,12 +1,23 @@
-.superInput {
+.superInputDefault {
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
 
+.superInput {
+    background-color: lightsteelblue;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 1px solid black;
+    background: orangered;
 }
 
 .error {
+    position: absolute;
+    top: 0;
     color: red;
+    text-transform: uppercase;
 }
