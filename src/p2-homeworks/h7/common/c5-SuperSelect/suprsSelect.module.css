@@ -1,0 +1,9 @@
+.select {
+    width: 200px;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: gold;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 30px;
+}
